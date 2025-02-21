@@ -1,0 +1,264 @@
+/* General Styles */
+body {
+    background-color: #ffffff; /* White Background */
+    color: #d63384;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Sections */
+.section-padding {
+    padding: 80px 20px;
+}
+
+.bg-light {
+    background-color: #f8f9fa;
+}
+
+/* Hero Section */
+.hero-section {
+    background: url('images/Twilight Rose.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-section .container {
+    max-width: 600px; /* Ensures content stays within a readable width */
+}
+
+.hero-section h1 {
+    font-size: 50px; /* Bigger Headline */
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 20px;
+}
+
+.hero-section .btn {
+    display: inline-block;
+    margin-top: 15px;
+}
+
+header p {
+    color: #8b0d42;
+}
+
+/* Buttons - Consistent Styling */
+.btn-pink {
+    background-color: #e4348c;
+    color: white;
+    border: none;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-pink:hover {
+    background-color: #f46fb6;
+    transform: scale(1.05);
+}
+
+.btn-outline-pink {
+    border: 2px solid #ff69b4;
+    color: #ff69b4;
+    font-size: 18px;
+    padding: 12px 24px;
+    border-radius: 8px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-outline-pink:hover {
+    background-color: #ff69b4;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Product Details - Styled as Cards */
+#product-details {
+    background-color: #f3f3f3; /* Light Gray Background */
+    padding: 60px 20px;
+}
+
+#product-details h2 {
+    color: black;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.product-card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card h3 {
+    color: #d63384;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.product-card ul {
+    padding: 0;
+    font-size: 16px;
+}
+
+/* Testimonials */
+#testimonials {
+    background-color: #f8f9fa;
+}
+
+#testimonials h2 {
+    color: black; /* Black Heading */
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.testimonial-card {
+    background: rgba(255, 182, 193, 0.2); /* Light Pink Transparent */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Subscription Section */
+#subscription {
+    background-color: #f3f3f3; /* Light Gray Background */
+    padding: 60px 20px;
+    text-align: center;
+}
+
+#subscription h2 {
+    font-size: 32px;
+    font-weight: bold;
+    color: black;
+}
+
+.subscription-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.subscription-form input {
+    border: 2px solid #ff69b4;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.subscription-form input:focus {
+    border-color: #ff1493;
+    outline: none;
+    box-shadow: 0 0 5px #ff69b4;
+}
+
+.subscription-form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #eb75ac;
+    color: black;
+}
+
+footer a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #cf1b75;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 60px 20px;
+        text-align: center;
+    }
+
+    .hero-section h1 {
+        font-size: 40px;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .product-card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card {
+        width: 90%;
+    }
+
+    .testimonial-card {
+        width: 90%;
+        margin: auto;
+    }
+
+    .subscription-form {
+        max-width: 90%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .btn-pink,
+    .btn-outline-pink {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .product-card {
+        width: 100%;
+    }
+
+    .testimonial-card {
+        width: 100%;
+    }
+
+    .subscription-form {
+        max-width: 100%;
+    }
+}
